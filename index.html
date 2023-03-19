@@ -1,45 +1,188 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+        <title>Portfolio Website</title>
+    </head>
+    <body>
 
-<body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
-    </nav>
-  </header>
+         <!-- HEADER -->
+         <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="navlogo">WEB-DEVELOPER</a>
+                </div>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
+                <div class="navmenu" id="nav-menu">
+                    <ul class="navllist">
+                        <li class="navitem"><a href="#home" class="navlink active">Home</a></li>
+                        <li class="navitem"><a href="#about" class="navlink">AboutMe</a></li>
+                        <li class="navitem"><a href="#skills" class="navlink">Skills</a></li>
+                        <li class="navitem"><a href="#work" class="navlink">Work</a></li>
+                        <li class="navitem"><a href="#contact" class="navlink">ContactMe</a></li>
+                    </ul>
+                </div>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
+                <div class="navtoggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="homedata">
+                    <h1 class="hometitle">Hi,<br>I'am <span class="hometitle-color">Coding Master</span><br> Web Developer</h1>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
-</body>
+                    <a href="#" class="button">Contact</a>
+                </div>
 
+                <div class="homesocial">
+                    <a href="" class="homesocial-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="homesocial-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="homesocial-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="homeimg">    
+                    <img src="img/profile.png" alt="">
+                </div>
+            </section>
+
+            <!--ABOUTME-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="aboutcontainer bd-grid">
+                    <div class="aboutimg">
+                        <img src="img/about.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="aboutsubtitle">I'am Coding Master</h2>
+                        <p class="abouttext">A coder is a person who writes computer programs using programming languages to create software, websites, and other digital applications. They use their knowledge of programming languages, algorithms, and data structures to design and develop functional and efficient programs. Coders often work in teams and collaborate with other developers, designers, and stakeholders to create high-quality software products. They must have strong analytical skills, attention to detail, and the ability to troubleshoot and debug code. Successful coders continuously learn and stay up-to-date with the latest trends and technologies in the field.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--SKILLS-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skillscontainer bd-grid">          
+                    <div>
+                        <h2 class="skillssubtitle">Profesional Skills</h2>
+                        <p class="skillstext">Software Developer</p>
+                        <div class="skillsdata">
+                            <div class="skillsnames">
+                                <i class='bx bxl-html5 skillsicon'></i>
+                                <span class="skillsname">HTML5</span>
+                            </div>
+                            <div class="skillsbar skillshtml">
+
+                            </div>
+                            <div>
+                                <span class="skillspercentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skillsdata">
+                            <div class="skillsnames">
+                                <i class='bx bxl-css3 skillsicon'></i>
+                                <span class="skillsname">CSS3</span>
+                            </div>
+                            <div class="skillsbar skillscss">
+                                
+                            </div>
+                            <div>
+                                <span class="skillspercentage">84%</span>
+                            </div>
+                        </div>
+                        <div class="skillsdata">
+                            <div class="skillsnames">
+                                <i class='bx bxl-javascript skillsicon' ></i>
+                                <span class="skillsname">JAVASCRIPT</span>
+                            </div>
+                            <div class="skillsbar skillsjs">
+                                
+                            </div>
+                            <div>
+                                <span class="skillspercentage">60%</span>
+                            </div>
+                        </div>
+                        <div class="skillsdata">
+                            <div class="skillsnames">
+                                <i class='bx bxs-paint skillsicon'></i>
+                                <span class="skillsname">PHP</span>
+                            </div>
+                            <div class="skillsbar skillsux">
+                                
+                            </div>
+                            <div>
+                                <span class="skillspercentage">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="img/skills.png" alt="" class="skillsimg">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">work</h2>
+
+                <div class="workcontainer bd-grid">
+                    <div class="workimg">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="workimg">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="workimg">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <div class="workimg">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="workimg">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="workimg">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--CONTACT ==-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contactcontainer bd-grid">
+                    <form action="" class="contactform">
+                        <input type="text" placeholder="Name" class="contactinput">
+                        <input type="mail" placeholder="Email" class="contactinput">
+                        <textarea name="" id="" cols="0" rows="10" class="contactinput"></textarea>
+                        <input type="button" value="Enter" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Coder</p>
+            <div class="footer__social">
+                <a href="#" class="footoricon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footoricon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footoricon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            
+        </footer>
+    </body>
 </html>
